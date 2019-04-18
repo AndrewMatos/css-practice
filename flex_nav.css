@@ -1,0 +1,338 @@
+html{
+	box-sizing: border-box;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+/*
+* {
+   border: 1px solid red !important;
+} */
+
+body{
+	font-family: sans-serif;
+	margin: 0;
+	background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+}
+
+a{
+	color:white;
+	font-weight: 100;
+	letter-spacing: 2px;
+	text-decoration: none;
+	background: rgba(0,0,0,0.2);
+	padding:20px 5px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	transition: all 0.5s;
+}
+
+a:hover {
+	background: rgba(0,0,0,0.3);
+}
+
+.toggleNav{
+	display: none;
+}
+
+img{
+	width: 100%;
+}
+
+.wrapper { 
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 50px;
+ }
+
+ input{
+ 	padding: 10px;
+ 	border: 0;
+ }
+
+ section, footer{
+ 	text-align: center;
+ 	background: rgba(0,0,0,0.2);
+ 	padding: 20px;
+ 	margin: 20px 0;
+ 	color: white;
+ 	font-weight: 100;
+ }
+
+ .flex-nav ul {
+ 	border:1px solid black;
+ 	list-style: none;
+ 	margin: 0;
+ 	padding: 0;
+ 	display: flex;
+ 	
+
+ }
+
+ .flex-nav li{
+ 	flex:3;
+ }
+
+ .flex-nav .social{
+ 	flex:1;
+ }
+
+ /* flex container */
+
+ .slider-nav ul{
+ 	list-style: none;
+ 	margin: 0;
+ 	padding: 0;
+ 	display: flex;
+
+ }
+
+ /* first layer flex item */
+
+ .slider-nav li{
+ 	flex:2;/* flex item*/
+ 	text-align: center;
+ 	display: flex; /* flex container */
+ }
+
+ .slider-nav .arrow{
+ 	flex:1;
+ }
+
+ .slider-nav a{
+ 	flex-basis: 100%;
+ 	display: flex;
+ 	align-items: center;
+ }
+
+ .arrow a{
+ 	font-size: 30px;
+ }
+
+ .slider-nav span{
+ 	display: box;
+ 	width: 100%;
+ }
+
+ /* Price boxes */
+
+.plan ul {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.plan ul li{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding: 10px;
+
+}
+
+.plan ul li:last-child{
+	border-bottom: 0;
+}
+
+.plan a{
+	text-decoration: none;
+	background: #FE3;
+	padding:10px;
+	color:black;
+	border-radius:4px;
+}
+
+.plan h2{
+	text-transform: uppercase;
+	color:white;
+	letter-spacing: 2px;
+	text-shadow: 3px 3px 0 rgba(0,0,0,0.1)
+}
+
+.price{
+	font-size: 50px;
+	font-family: serif;
+	margin: 10px 0;
+}
+
+/* flex container */
+.pricing-grid{
+	max-width: 750px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	
+}
+
+.plan{
+	
+	background: rgba(255,255,255,0.2);
+	margin:20px;
+	padding: 20px;
+	border-radius: 4px;
+	text-align: center;
+	
+	display: flex;
+	flex-wrap: wrap;
+	flex:1;
+}
+
+.plan>*{
+	flex:1 1 100%;
+}
+
+.cta{
+	align-self: flex-end;
+}
+
+/* equal height collumns and leftover elements */
+
+#lyrics .elements{
+	display: none;
+}
+
+#lyrics .open{
+	background: rgba(0,0,0,0.2);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.item.large{
+	font-size: 40px;
+}
+
+.item.small{
+	font-size: 20px;
+}
+
+.item{
+	background: rgba(255,255,255,0.2);
+	margin: 10px;
+	padding: 20px;
+	font-size: 30px;
+
+	flex:0 1 calc(33.33% - 20px);
+}
+
+/* One line flex form */
+
+.flex-form > * {
+	border:0;
+	padding: 10px;
+	background: white;
+	line-height: 50px;
+	font-size: 20px;
+	border-radius: 0;
+	outline: 0;
+	border-right: 1px solid rgba(0,0,0,0.2);
+	-webkit-appearance:none;
+}
+
+.submit-yellow {
+	background: #FE3;
+}
+
+.flex-form >*:last-child{
+	border-right:0;
+}
+
+
+
+.flex-form{
+	display: flex;
+	border: 20px solid rgba(0,0,0,0.3);
+	border-radius: 5px;
+	width: 100%;
+	align-content: center;
+}
+
+
+
+
+
+.flex-form input{
+	flex:1;
+}
+
+input[type="search"]{
+	min-width: 250px;	
+}
+
+
+
+@media all and (max-width: 900px){
+	.flex-nav ul{
+		flex-wrap: wrap;
+	}
+
+	.flex-nav li{
+		flex:1 1 50%;
+	}
+
+	.flex-nav .social{
+ 		flex:1 1 25%;
+ 	}
+
+ 	.flex-form{
+ 		flex-direction: column;
+ 	}
+
+ 	
+}
+
+
+@media all and (max-width: 500px){
+
+	.flex-nav li{
+		flex-basis:100%;
+	}
+ 	
+ 	/* flex container */
+
+	.wrapper{
+		display: flex;
+		flex-direction: column;
+	}
+
+
+
+	/* flex item */
+
+	.wrapper > * {
+		order:99;
+	}
+
+	.flex-nav{
+		order:1;
+	}
+
+	.top{
+		order:2;
+	}
+
+	.details{
+		order:3;
+	}
+
+	.signup{
+		order:4;
+	}
+
+	.toggleNav{
+		display: block;
+	}
+
+	.flex-nav ul{
+		display: none;
+	}
+
+	.flex-nav ul.open{
+		display: flex;
+	}
+
+	.pricing-grid{
+		flex-direction: column;
+	}
+}
+

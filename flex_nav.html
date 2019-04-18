@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flex_nav</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="flex_nav.css">
+
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="wrapper">
+
+		<header class="top">
+			<h1>
+				<a href="#">What the Flexbox?!</a>
+			</h1>
+		</header>
+
+		<nav class="flex-nav">
+			<a href="#" class="toggleNav">☰ Menu</a>
+			<ul>
+				<li><a href="#"> Item 01 </a></li>
+				<li><a href="#"> Item 02 </a></li>
+				<li><a href="#"> Item 03 </a></li>
+				<li><a href="#"> Item 04 </a></li>
+				<li><a href="#"> Item 05 </a></li>
+				<li><a href="#"> Item 06 </a></li>
+				<li class="social">
+					<a href="https://twitter.com/juango_snijack" target="_blank"><i class="fa fa-twitter"></i></a>
+				</li>
+				<li class="social">
+					<a href="https://www.facebook.com/andrew.mtx" target="_blank">
+					 <i class="fa fa-facebook"></i>	
+					</a>
+				</li>
+				<li class="social">
+					<a href="https://github.com/darkshadowspike/" target="_blank">
+						<i class="fa fa-github"></i>
+					</a>
+				</li>
+			</ul>		
+		</nav>
+
+		<section class="slider">
+			<img src="http://lorempixel.com/1000/600/abstract">
+		</section>
+
+		<nav class="slider-nav">
+			<ul>
+				<li class="arrow">
+					<a href="#"><span>←</span></a>
+				</li>
+
+				<li>
+					<a href="#"><span>add CLI to Node Apps with vantage</span></a>	
+				</li>
+
+				<li>
+					<a href="#"><span>NewsPrint, Spectable</span></a>
+				</li>
+
+				<li>
+					<a href="#"><span>Small modules: Tales from serial Module Author</span></a>
+				</li>
+
+				<li>
+					<a href="#"><span>The End</span></a>
+				</li>
+
+				<li class="arrow">
+					<a href="#"><span>→</span></a>
+				</li>
+			</ul>		
+		</nav>
+
+		<section class="details">
+			<p>A simple video course to help you master FlexBox</p>
+			<p>Sign up today to grab all the videos and excersises!</p>
+		</section>
+
+		<section class="signup">
+			<form action="" class="signup">
+				<input type="text" placeholder="your name">
+				<input type="email" placeholder="email addres">
+				<input class="submit-yellow" type="submit" value="Sign me up!">
+			</form>
+		</section>
+
+		<!-- flex container -->
+		<div class="pricing-grid">
+			<div class="plan plan1">
+				<h2>Cat</h2>
+				<p>Common, yet regarded by many as the worst house pet</p>
+				<ul class="features">
+					<li>Scratches everything</li>
+					<li>Easly lost for days</li>
+					<li>Kind of a bummer</li>
+				</ul>
+
+				<p class="price">Free</p>
+				<a href="#" class="cta">Really?</a>
+			</div>
+
+			<div class="plan plan2">
+				<h2>Dog</h2>
+				<p>Loving, gentle and caring. Dogs are the best house pet to have and will increase happines </p>
+				<ul class="features">
+					<li>Super Fun</li>
+					<li>Friends love them</li>
+					<li>Plays games</li>
+					<li>Not a cat</li>
+				</ul>
+				<p class="price">90$</p>
+				<a href="#" class="cta">Beast deal</a>			
+			</div>
+
+			<div class="plan plan3">
+				<h2>Fish</h2>
+				<ul class="features">
+					<li>Cheap and easy</li>
+					<li>Eats flakes</li>
+					<li>Cop out</li>
+					<li>Replaceable</li>
+				</ul>
+				<p class="price">3$</p>
+				<a href="#" class="cta">ok?</a>	
+				
+			</div>
+		</div>
+
+		<a href="#lyrics" class="toggleText">☰ Text</a>
+
+		<div id="lyrics">
+			<div class="elements">
+				<div class="item">You can tell the world never was my girl</div>
+				<div class="item">you can burn my clothes when i'm gone</div>
+				<div class="item large">Or you can tell your friends just what fool i've been </div>
+				<div class="item">and laugh and joke bout me on the phone</div>
+
+				<div class="item">you can tell my arms go back to the farm</div>
+				<div class="item small">you can tell my feet to hit the floor</div>
+				<div class="item">or you can tell my lips to tell my fingerlips</div>
+				<div class="item small">they won't be reaching out for you no more</div>
+
+				<div class="item large">but don't tell my heart my achy breaky heart</div>
+				<div class="item">I just don't think he'd understand</div>
+				<div class="item smal"> And if you tell my heart</div>
+				<div class="item large">my achy breaky heart</div>
+				<div class="item"> he might blow up and kill this man</div>
+			</div>
+				
+		</div>
+
+		<br>
+
+		<!-- in line form flexbox -->
+		
+		<div class="cover">
+			<form class="flex-form">
+				<input type="search" placeholder="where do you want to go">
+
+				<label for="from">From</label>
+				<input type="date" name="from">
+
+				<label for="to">To</label>
+				<input type="date" name="to">
+
+				<select names="" id="">
+					<option value="1">1 Guest</option>
+					<option value="2">2 Guest</option>
+					<option value="3">3 Guest</option>
+					<option value="4">4 Guest</option>
+					<option value="5">5 Guest</option>
+				</select>
+
+				<input class="submit-yellow" type="submit" value="Search">
+			</form>
+			
+		</div>
+
+		
+
+		<footer>
+			<p>&copy; wes bos</p>
+		</footer>
+	</div>
+
+   
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<script>
+		$(function(){
+			$(".toggleNav").on("click" ,function(){
+				$(".flex-nav ul").toggleClass("open");
+			});
+		});
+
+		$(function(){
+			$(".toggleText").on("click" ,function(){
+				$("#lyrics .elements").toggleClass("open");
+			});
+		});
+	</script>
+</body>
+</html>
